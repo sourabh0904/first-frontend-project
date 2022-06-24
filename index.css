@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+div.lang_container{
+    padding : 40px 30px; display: flex; flex-direction: row;
+    flex-wrap: wrap; row-gap: 50px; column-gap: 38px; place-items: center; justify-content: center;
+}
+div.lang_container > div.langs{
+        width: 350px;padding : 20px;border-radius: 20px;
+        box-shadow: rgb(86 86 86 / 43%) 2px 2px 22px 1px; height: 200px;
+        padding: 30px; letter-spacing: 1px;
+}
+div.lang_container > div.langs > a{
+    color: #ff194f;text-decoration: none;font-size: 18px;font-weight: 600;
+    line-height: 50px;
+    
+}
+div.lang_container > div.langs > a:hover{
+    text-decoration: underline;
+}
+div.langs h3{
+    font-size: 25px; margin : 20px 0;
+}
+div.lang_container > div.langs:first-child{
+    background-image: linear-gradient(to right , #ff194f , #42caf3);
+    color : white;
+}
+div.lang_container > div.langs::before{
+    content : '';display: block;
+    height: 60px ; width: 60px; background-color: #42caf3;
+    position: absolute; transform-origin: 50%  50%; transform: translate( 0, calc( -50% - 30px ));
+    border-radius: 100%; background-image: url("/react_logo.svg.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-position: center , center;background-repeat: no-repeat , no-repeat;
+    background-size:   40px 40px ,auto;
+}
+div.lang_container > div.langs:first-child::before{
+    display: none;
+}
+div.lang_container > div.langs:hover{
+    transform: scale(1.05);
+}
+div.lang_container > div.langs > a::after{
+    content: '';display: inline-block;width: 30px;height: 30px;
+    background-image: url("/arrow_icon.svg.svg");
+    background-size: 23px 23px;
+    background-position: center;transform: translateY( 8px); margin-left: 10px;
+    background-repeat: no-repeat;
+}
