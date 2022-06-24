@@ -45,29 +45,29 @@ div.lang_container > div.langs:hover{
 }
 div.lang_container > div.langs > a::after{
     content: '';display: inline-block;width: 30px;height: 30px;
-    background-image: url("/arrow_icon.svg");
+    background-image: url("arrow_icon.svg");
     background-size: 23px 23px;
     background-position: center;transform: translateY( 8px); margin-left: 10px;
     background-repeat: no-repeat;
 }
 
 div.lang_container > div.langs:nth-child(2):before{
-    background-image: url("/html_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-image: url("html_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
     background-size:  35px 35px ,auto;
     
 }div.lang_container > div.langs:nth-child(3):before{
-    background-image: url("/css_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-image: url("css_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
     
 }div.lang_container > div.langs:nth-child(4):before{
-    background-image: url("/js_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-image: url("js_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
     background-size:  35px 35px ,auto;
     
 }div.lang_container > div.langs:nth-child(5):before{
-    background-image: url("/react_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-image: url("react_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
     
 }
 div.lang_container > div.langs:nth-child(6):before{
-    background-image: url("/angular_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
+    background-image: url("angular_logo.svg") , linear-gradient(to bottom , #ff194f , #42caf3  ) ;
 
 }
 div.input_name{
